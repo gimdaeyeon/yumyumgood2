@@ -184,7 +184,7 @@
 												class="content-title" placeholder="예) 쇠고기 미역국 끓이기">
 										</div>
 										<div class="content-wrap">
-											레시피 카테고리 선택 <br>
+											레시피 카테고리 선택 <br> <br>
 
 
 											<!-- 카테고리 체크박스 -->
