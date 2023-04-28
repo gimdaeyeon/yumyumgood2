@@ -2,7 +2,14 @@
 	margin: 0;
 	padding: 0;
 }
-
+@font-face {
+	font-family: 'NanumSquareNeo-Variable';
+	src:
+		url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/NanumSquareNeo-Variable.woff2')
+		format('woff2');
+	font-weight: normal;
+	font-style: normal;
+}
 @font-face {
 	font-family: "GmarketSansMedium";
 	src:
@@ -15,6 +22,7 @@
 a {
 	color: black;
 	text-decoration: none;
+	font-family: 'NanumSquareNeo-Variable';
 }
 
 button {
@@ -27,10 +35,11 @@ button {
 	outline: none;
 }
 
+
 #body-main {
 	width: 100%;
 	height: 100%;
-	font-family: "GmarketSansMedium";
+	font-family: 'NanumSquareNeo-Variable';
 }
 
 #main-header {
@@ -60,6 +69,7 @@ button {
 .main-page-tbb {
 	width: 100%;
 	height: 100%;
+	
 }
 
 .img-box {
@@ -103,6 +113,7 @@ button {
 
 .follow-box>p :hover, .manage :hover {
 	font-style: italic;
+	
 }
 
 .nickname-box {
@@ -171,7 +182,7 @@ button {
 }
 
 .main-banner {
-	background-color: rgb(189, 189, 189);
+	background-color:  rgb(255 143 0/ 87%);
 	width: 830px;
 	height: 45px;
 	margin: auto;
@@ -429,6 +440,7 @@ select:focus {
 th, td {
 	text-align: center;
 	padding: 8px;
+	
 }
 
 tr {
@@ -447,6 +459,8 @@ th {
 td {
 	border-bottom: 1px solid #e5e5e5;
 }
+
+
 
 .member-table tr>th:nth-child(1), .member-table tr>td:nth-child(1) {
 	width: 50px;
@@ -559,16 +573,18 @@ td {
 }
 
 .button {
-	background-color: rgb(189, 189, 189);
+	background-color: rgb(255 160 43 / 73%);
 	border: none;
 	padding: 8px 16px;
 	text-align: center;
 	text-decoration: none;
-	font-size: 14px;
+	font-size: 12px;
 	cursor: pointer;
 	border-radius: 4px;
 	margin-left: 706px;
 	margin-top: 30px;
+	font-weight: 600;
+	
 }
 
 /* 페이징 스타일 */
@@ -594,17 +610,26 @@ td {
 	border: 1px solid #bdbdbd;
 	transition: background-color 0.3s ease, color 0.3s ease;
 }
+.order-status-select{
+	font-size:15px;
+}
 
+.order-date{
+	font-size:13px;
+}
+.post-date{
+	font-size: 13px;
+}
 .pagination a:hover {
-	background-color: #937062;
-	border-color: #937062;
+	background-color: #ff8000;
+	border-color: #ff8000;
 	color: #fff;
 }
 
 .pagination .active {
-	background-color: #bdbdbd;
-	border-color: #bdbdbd;
-	color: #fff;
+	background-color: white;
+	border: 1.5px solid #ff8000;
+	color: #ff8000;
 }
 /* .paging {
     display: flex;
@@ -642,7 +667,9 @@ td {
 }
 
 .button:hover {
-	background-color: #f4f4f2;
+	background-color: #ff8000;
+	color:white;
+	
 }
 
 /* 사이드 바 */
@@ -762,14 +789,15 @@ td {
 }
 
 footer {
-	background: #aca4a4;
 	margin-top: 86px;
-	color: #fff;
 	display: flex;
 	width: 100%;
 	height: 220px;
 	align-items: center;
 	flex-direction: column;
+	 font-family: 'AppleSDGothicNeo', 'Noto Sans KR', sans-serif;
+background: white;
+  color: #fff;
 }
 
 footer>div {
@@ -785,18 +813,20 @@ footer>div {
 }
 
 .footer-content h3 {
-	font-size: 1.5rem;
-	font-weight: 500;
-	text-transform: capitalize;
-	line-height: 3rem;
+	 font-size: 2.1rem;
+  font-weight: bold;
+  text-transform: capitalize;
+  line-height: 3rem;
+   font-family: 'Josefin Slab', serif;/*----로고글씨체----*/
+	color:black;
 }
 
 .footer-content p {
 	max-width: 500px;
-	margin: 10px auto;
-	line-height: 28px;
-	font-size: 14px;
-	color: #cacdd2;
+  margin: 10px auto;
+  line-height: 28px;
+  font-size: 14px;
+  color: #5f5f5f;
 }
 
 .footer-bottom {
@@ -806,6 +836,7 @@ footer>div {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	 color:grey;
 }
 
 .footer-bottom p {
@@ -817,9 +848,9 @@ footer>div {
 }
 
 .footer-bottom p a {
-	color: #44bae8;
-	font-size: 16px;
-	text-decoration: none;
+	color: #ffa954;
+  font-size: 16px;
+  text-decoration: none;
 }
 
 .footer-bottom span {
@@ -847,7 +878,7 @@ footer>div {
 }
 
 .footer-menu ul li a:hover {
-	color: #27bcda;
+	color: #ff7f00;
 }
 
 .btn-span i {

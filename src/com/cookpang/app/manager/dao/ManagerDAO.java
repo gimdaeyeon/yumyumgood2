@@ -8,7 +8,9 @@ import org.apache.ibatis.session.SqlSession;
 import com.cookpang.app.manager.vo.ManagerVO;
 import com.cookpang.app.order.dto.OrderDTO;
 import com.cookpang.app.order.vo.OrderVO;
+import com.cookpang.app.payment.vo.PaymentVO;
 import com.cookpang.app.post.vo.PostVO;
+import com.cookpang.app.recipe.category.vo.RecipeCategoryVO;
 import com.cookpang.app.user.dto.UserDTO;
 import com.mybatis.config.MyBatisConfig;
 
@@ -82,6 +84,12 @@ public class ManagerDAO {
 	
 	public int getOrderSerchTotal(Map<String, Object> orderPageMap) {
 		return sqlSession.selectOne("manager.getOrderSerchTotal",orderPageMap);
+	}
+	public List<RecipeCategoryVO> getCategoryViewCount() {
+		return sqlSession.selectList("manager.getCategoryViewCount");
+	}
+	public List<PaymentVO> getTotalRevenue() {
+		return sqlSession.selectList("manager.getTotalRevenue");
 	}
 	
 	

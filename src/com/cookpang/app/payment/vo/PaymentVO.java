@@ -12,24 +12,12 @@ public class PaymentVO {
     int ingredientPrice;
     int orderItemPrice;
     String ingredientImageSystemName;
+    int totalRevenue;
+    String paymentDate;
 	
 	
     
     public PaymentVO() {}
-
-	
-
-	@Override
-	public String toString() {
-		return "PaymentVO [userNumber=" + userNumber + ", orderNumber=" + orderNumber + ", orderItemQuantity="
-				+ orderItemQuantity + ", orderDate=" + orderDate + ", orderStatus=" + orderStatus + ", ingredientName="
-				+ ingredientName + ", ingredientPrice=" + ingredientPrice + ", orderItemPrice=" + orderItemPrice
-				+ ", ingredientImageSystemName=" + ingredientImageSystemName + "]";
-	}
-
-
-
-
 
 
 
@@ -39,17 +27,9 @@ public class PaymentVO {
 
 
 
-
-
-
-
 	public void setUserNumber(int userNumber) {
 		this.userNumber = userNumber;
 	}
-
-
-
-
 
 
 
@@ -59,17 +39,9 @@ public class PaymentVO {
 
 
 
-
-
-
-
 	public void setOrderNumber(int orderNumber) {
 		this.orderNumber = orderNumber;
 	}
-
-
-
-
 
 
 
@@ -79,17 +51,9 @@ public class PaymentVO {
 
 
 
-
-
-
-
 	public void setOrderItemQuantity(int orderItemQuantity) {
 		this.orderItemQuantity = orderItemQuantity;
 	}
-
-
-
-
 
 
 
@@ -99,17 +63,9 @@ public class PaymentVO {
 
 
 
-
-
-
-
 	public void setOrderDate(String orderDate) {
 		this.orderDate = orderDate;
 	}
-
-
-
-
 
 
 
@@ -119,17 +75,9 @@ public class PaymentVO {
 
 
 
-
-
-
-
 	public void setOrderStatus(String orderStatus) {
 		this.orderStatus = orderStatus;
 	}
-
-
-
-
 
 
 
@@ -139,17 +87,9 @@ public class PaymentVO {
 
 
 
-
-
-
-
 	public void setIngredientName(String ingredientName) {
 		this.ingredientName = ingredientName;
 	}
-
-
-
-
 
 
 
@@ -159,17 +99,9 @@ public class PaymentVO {
 
 
 
-
-
-
-
 	public void setIngredientPrice(int ingredientPrice) {
 		this.ingredientPrice = ingredientPrice;
 	}
-
-
-
-
 
 
 
@@ -179,17 +111,9 @@ public class PaymentVO {
 
 
 
-
-
-
-
 	public void setOrderItemPrice(int orderItemPrice) {
 		this.orderItemPrice = orderItemPrice;
 	}
-
-
-
-
 
 
 
@@ -199,19 +123,50 @@ public class PaymentVO {
 
 
 
-
-
-
-
 	public void setIngredientImageSystemName(String ingredientImageSystemName) {
 		this.ingredientImageSystemName = ingredientImageSystemName;
 	}
 
 
 
+	public int getTotalRevenue() {
+		return totalRevenue;
+	}
 
 
 
+	public void setTotalRevenue(int totalRevenue) {
+		this.totalRevenue = totalRevenue;
+	}
+
+
+
+	public String getPaymentDate() {
+		return paymentDate;
+	}
+
+
+
+	public void setPaymentDate(String paymentDate) {
+		this.paymentDate = paymentDate;
+	}
+
+
+
+	@Override
+	public String toString() {
+		return "PaymentVO [userNumber=" + userNumber + ", orderNumber=" + orderNumber + ", orderItemQuantity="
+				+ orderItemQuantity + ", orderDate=" + orderDate + ", orderStatus=" + orderStatus + ", ingredientName="
+				+ ingredientName + ", ingredientPrice=" + ingredientPrice + ", orderItemPrice=" + orderItemPrice
+				+ ", ingredientImageSystemName=" + ingredientImageSystemName + ", totalRevenue=" + totalRevenue
+				+ ", paymentDate=" + paymentDate + "]";
+	}
+
+
+
+	
+
+    
 
 	
 

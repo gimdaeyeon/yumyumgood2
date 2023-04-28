@@ -129,6 +129,35 @@
 		where u.user_id like concat('%',#{serchKeyword}, '%') or o.order_number like concat('%',#{serchKeyword}, '%')
 	</select>
 
+	<select id="getCategoryViewCount" resultType="RecipeCategoryVO">
+		select sum(post_view_count) as post_view_count,
+		tc.category_name  
+		from tbl_post p
+		join tbl_recipe_category rc 
+		ON p.post_number =rc.post_number 
+		join tbl_category tc 
+		on tc.category_number = rc.category_number 
+		group by rc.category_number
+	</select>
+	
+	<select id="getTotalRevenue" resultType="PaymentVO">
+		<!-- 최근 7일간의 일매출 쿼리 -->
+		select date(payment_date) as payment_date, sum(payment_amount) as total_revenue
+		from tbl_payment 
+		where payment_date >= date(now()) - interval 7 day
+		group by date(payment_date)
+		
+		<!-- 최근 6개월간의 월별 매출액 쿼리 -->
+		<!-- select month(payment_date) as payment_date, sum(payment_amount) as total_revenue
+		from tbl_payment
+		where payment_date >= date(now()) - interval 6 month
+		group by month(payment_date) -->
+	</select>
+	
+
+
+
+
 
 
 </mapper>

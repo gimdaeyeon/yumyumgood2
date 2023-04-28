@@ -5,6 +5,7 @@ public class RecipeCategoryVO {
 	private int postNumber;
 	private int categoryNumber;
 	private String categoryName;
+	private int postViewCount;
 	
 	
 	public RecipeCategoryVO() {}
@@ -40,13 +41,23 @@ public class RecipeCategoryVO {
 	}
 
 
+	public int getPostViewCount() {
+		return postViewCount;
+	}
+
+
+	public void setPostViewCount(int postViewCount) {
+		this.postViewCount = postViewCount;
+	}
+
+
 	@Override
 	public String toString() {
 		return "RecipeCategoryVO [postNumber=" + postNumber + ", categoryNumber=" + categoryNumber + ", categoryName="
-				+ categoryName + "]";
+				+ categoryName + ", postViewCount=" + postViewCount + "]";
 	}
 
-	
+
 	
 	
 	

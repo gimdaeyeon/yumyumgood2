@@ -9,36 +9,41 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import com.cookpang.app.Execute;
-import com.cookpang.app.order.item.dao.OrderItemDAO;
-import com.cookpang.app.order.item.vo.OrderItemVO;
+import com.cookpang.app.manager.dao.ManagerDAO;
+import com.cookpang.app.payment.vo.PaymentVO;
+import com.cookpang.app.recipe.category.vo.RecipeCategoryVO;
 import com.google.gson.Gson;
 import com.google.gson.JsonArray;
 import com.google.gson.JsonObject;
 
-public class OrderItemListOkController implements Execute {
+public class ChartDataOkController implements Execute {
 
 	@Override
 	public void execute(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 		
-		int orderNumber = Integer.parseInt(req.getParameter("orderNumber"));
+		ManagerDAO managerDAO = new ManagerDAO();
 		
-		OrderItemDAO orderItemDAO = new OrderItemDAO();
+		List<RecipeCategoryVO> cateViewCountList = managerDAO.getCategoryViewCount();
+		List<PaymentVO> salesList= managerDAO.getTotalRevenue();
 		
-		List<OrderItemVO> orderItmeList = orderItemDAO.getOrderItems(orderNumber);
+		System.out.println(salesList);
 		
-		System.out.println(orderItmeList);
 		
 		Gson gson = new Gson();
 		JsonObject result = new JsonObject();
 		
-		JsonArray orderItemsJsonArray = gson.toJsonTree(orderItmeList).getAsJsonArray();
-		result.add("orderItems", orderItemsJsonArray);
+		JsonArray cateViewCountArray = gson.toJsonTree(cateViewCountList).getAsJsonArray();
+		JsonArray dailySalesArray = gson.toJsonTree(salesList).getAsJsonArray();
 		
+		result.add("cateViewCounts", cateViewCountArray);
+		result.add("dailySales", dailySalesArray);
 		
 		resp.setContentType("application/json");
 		resp.setCharacterEncoding("utf-8");
 		PrintWriter out = resp.getWriter();
 		out.print(result.toString());
+		
+		System.out.println(result.toString());
 		
 		out.close();
 		
