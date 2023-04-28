@@ -25,7 +25,8 @@ String myTextareaValue = request.getParameter("myTextarea");
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
-	
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/font-applesdgothicneo@1.0/all.min.css">
+
 	
 <script src="https://kit.fontawesome.com/9416f63361.js"
 	crossorigin="anonymous"></script>

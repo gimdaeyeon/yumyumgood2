@@ -129,7 +129,7 @@
 						<div class="read-content-title">
 							<!-- 임시 게시물 제목 -->
 							<!-- 제목 최대 자릿수 44 -->
-							<h3 style="margin-top: -20px;">${post.getPostTitle()}</h3>
+							<h3 style="margin-top: -20px; margin-left: 33px;">${post.getPostTitle()}</h3>
 
 						</div>
 
