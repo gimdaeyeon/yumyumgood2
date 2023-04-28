@@ -21,7 +21,6 @@
 * {
 	margin: 0;
 	padding: 0;
-	font-family: 'NanumSquareNeo-Variable';
 }
 
 input {
@@ -63,6 +62,7 @@ a {
 	height: 795px;
 	margin: auto;
 	margin-top: 25px;
+	font-family: 'NanumSquareNeo-Variable';
 	border: solid 1px rgb(186, 177, 177);
 }
 
@@ -540,6 +540,7 @@ input[type=file]::file-selector-button {
 	margin-left: 30px;
 	list-style: none;
 	margin-bottom: 20px;
+	font-family: "GmarketSansMedium";
 }
 
 .li-box {
@@ -550,6 +551,7 @@ input[type=file]::file-selector-button {
 	display: flex;
 	align-items: center;
 	border-radius: 20px;
+	font-family: "GmarketSansMedium";
 }
 
 .li-box:hover {

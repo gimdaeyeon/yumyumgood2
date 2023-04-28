@@ -397,6 +397,7 @@ footer {
 	height: 220px;
 	align-items: center;
 	flex-direction: column;
+	font-family: 'AppleSDGothicNeo', 'Noto Sans KR', sans-serif;
 }
 
 footer>div {

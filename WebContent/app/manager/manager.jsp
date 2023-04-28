@@ -24,6 +24,7 @@
 <link
 	href="https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding:wght@400;700&family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
 	rel="stylesheet" />
+	<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/font-applesdgothicneo@1.0/all.min.css">
 <script src="https://kit.fontawesome.com/9416f63361.js"
 	crossorigin="anonymous"></script>
 </head>

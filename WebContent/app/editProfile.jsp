@@ -21,7 +21,7 @@ String myTextareaValue = request.getParameter("myTextarea");
 <link
 	href="https://fonts.googleapis.com/css2?family=Josefin+Slab:ital@1&display=swap"
 	rel="stylesheet" />
-	
+	<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/font-applesdgothicneo@1.0/all.min.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
@@ -282,7 +282,11 @@ String myTextareaValue = request.getParameter("myTextarea");
 						</li>
 						<li class="sidebar-li">
 							<div class="li-box">
-								<i class="fa-regular fa-user"></i> <a href="#">프로필</a>
+							<i class="fa-regular fa-user"></i>
+									
+										<a
+											href="${pageContext.request.contextPath}/mypage/mypageOk.my">프로필</a>
+
 							</div>
 						</li>
 						<!-- </ul> -->

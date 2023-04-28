@@ -15,6 +15,7 @@
 <link
 	href="https://fonts.googleapis.com/css2?family=Josefin+Slab:ital@1&display=swap"
 	rel="stylesheet" />
+	<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/font-applesdgothicneo@1.0/all.min.css">
 <script src="https://kit.fontawesome.com/9416f63361.js"
 	crossorigin="anonymous"></script>
 </head>
