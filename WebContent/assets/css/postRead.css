@@ -112,6 +112,7 @@ a{
 .read-content-wrap{
   height: 100%;
   width: 40%;
+/*   height: 40px; */
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -127,8 +128,11 @@ a{
 }
 
 .writer-profile{
-  height: 100%;
-  width: 15%;
+ height: 100%;
+    width: 50px;
+    margin-left: 20p;
+    font-size: 20px;
+    margin-top: 20px;
 }
 
 .writer-profile-img{
@@ -150,7 +154,7 @@ a{
 
 .more-btn{
   font-size: 25px;
-  margin-right: -2px;
+  margin-right: -7px;
 }
 
 .read-main-content{
@@ -174,6 +178,7 @@ a{
   display: flex;
   align-items: center;
   
+  margin-bottom: 20px;
 }
 
 .content-choice-box button{
@@ -186,7 +191,7 @@ a{
 }
 
 .recipe-btn-box{
-  margin-left: 10px;
+  margin-left: -7px;
   border-left-style: inset;
   padding-left: 5px;
   
@@ -198,13 +203,13 @@ a{
 
 .content-box{
   width: 100%;
-  height: 58%;
+  height: 63%;
   padding-left: 10px;
 }
 
 .read-content-title{
   width: 100%;
-  height: 10%;
+  height: 15%;
   display: flex;
   align-items: center;
   padding-left: 10px;
@@ -282,7 +287,8 @@ a{
   display: flex;
   align-items: center;
   white-space: pre-line;
-  margin-top: 5px;
+   margin-top: 13px;
+/*   margin-top: 13px; */
 }
 
 .read-comment-more{
@@ -346,7 +352,7 @@ a{
   border-bottom: 1px solid rgba(165, 164, 164, 0.296) ;
   width: 100%;
   height: 30px;
-  font-size: 15px;
+  font-size: 12px;
   text-align: end;
 }
 
@@ -552,7 +558,14 @@ div.post-view-count-box{
    height: 0;
 }
 
+.comment-write-time{
+	margin-top: -4px;
+}
 
+.comment-delete{
+	margin-top: -4px;
+	
+}
 
 
 
