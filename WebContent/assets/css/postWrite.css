@@ -280,6 +280,11 @@ ul {
 	right : -62px;
 }
 
+.next-btn i{
+	margin: 10px;
+}
+
+
 button {
 	border: none;
 	background: none;
@@ -338,6 +343,8 @@ button {
 	color: rgba(88, 88, 88, 0.789);
 	right: 49px;
     top: 7px;
+	right: 45px;
+	top : 0;
 }
 
 /* 내용 스타일 */

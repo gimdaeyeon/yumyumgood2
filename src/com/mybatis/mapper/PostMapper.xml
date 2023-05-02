@@ -115,7 +115,7 @@
 
 
 	<select id="postSelect" parameterType="map" resultType="PostVO">
-		select
+		select distinct
 		tp.post_number, tp.user_number, post_title, tu.user_nickname,
 		tpf.post_file_index, tp.post_date, tp.post_thumbnail
 		from tbl_post tp

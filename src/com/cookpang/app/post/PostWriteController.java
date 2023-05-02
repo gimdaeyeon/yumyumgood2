@@ -33,7 +33,7 @@ public class PostWriteController implements Execute {
 			path = "/app/user/login.jsp";
 		}else {
 			path = "/app/post/postWrite.jsp";
-			req.setAttribute("userId", userDAO.getUserId(userNumber));
+			req.setAttribute("user", userDAO.getProfileInfo(userNumber));
 			req.setAttribute("ingredientList", ingredientDAO.getIngredientNumber());
 			req.setAttribute("ingredientCategoryList", ingredientCategoryDAO.getIngredientCategoryNumber());
 			

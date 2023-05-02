@@ -4,7 +4,7 @@
 <mapper namespace="category">
 	
 	<select id="categoryList" resultType="PostVO" parameterType="map">
-		select tp.post_number, tp.user_number, post_title, tu.user_nickname, tc.category_number, 
+		select distinct tp.post_number, tp.user_number, post_title, tu.user_nickname, tc.category_number, 
 		tp.post_thumbnail, tp.post_date 
 		from tbl_post tp 
 		left outer join tbl_user tu on tp.user_number = tu.user_number
