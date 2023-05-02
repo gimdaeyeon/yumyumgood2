@@ -154,15 +154,15 @@
 									<div class="write-box-user-profile-img">
 										<!-- 임시 프로필사진 -->
 										<c:choose>
-									<c:when test="${empty post.getUserProfileImageSystemName()}">
+									<c:when test="${empty user.getUserProfileImageSystemName()}">
 										<img
 											src="https://www.thechooeok.com/common/img/default_profile.png"
-											alt="${pageContext.request.contextPath}${post.getUserProfileImageSystemName()}"
+											alt="${post.getUserProfileImageSystemName()}"
 											class="profile-img">
 									</c:when>
 									<c:otherwise>
-										<img src="${pageContext.request.contextPath}/upload/${post.getUserProfileImageSystemName()}"
-											alt="${post.getUserProfileImageSystemName()}"
+										<img src="${pageContext.request.contextPath}/upload/${user.getUserProfileImageSystemName()}"
+											alt="${user.getUserProfileImageSystemName()}"
 											class="profile-img">
 									</c:otherwise>
 								</c:choose>
@@ -170,7 +170,7 @@
 									<div class="write-box-user-id">
 
 										<!-- 임시 사용자아이디 -->
-										<c:out value="${userId}"></c:out>
+										<c:out value="${user.getUserNickname()}"></c:out>
 									</div>
 
 								</div>
