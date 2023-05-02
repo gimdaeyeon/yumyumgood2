@@ -66,8 +66,8 @@
 						<li class="ingredient-imgs">
 							<c:forEach var="ingredient" items="${ingredient}">
 							<div > <img
-								src="/upload/${ingredient.ingredientImageSystemName}"
-								alt="깻잎" class="ingredients-img">
+								src="/upload/${ingredient.getIngredientImageSystemName()}"
+								alt="${ingredient.getIngredientName()}" class="ingredients-img">
 							</div> 
 						</c:forEach>
 					</li>
@@ -92,7 +92,7 @@
 	        							 <input type="hidden" name="price" class="price"
 											value="${ingredient.getIngredientPrice()}">
 									</span>
-        							<c:if test="${status.count%5 == 0}">
+        							<c:if test="${status.count%4 == 0}">
 										<br>
 									</c:if>
 								</c:forEach>

@@ -278,6 +278,11 @@ ul {
 	right : 0;
 }
 
+.next-btn i{
+	margin: 10px;
+}
+
+
 button {
 	border: none;
 	background: none;
@@ -332,7 +337,7 @@ button {
 	font-size: 35px;
 	font-weight: bold;
 	color: rgba(88, 88, 88, 0.789);
-	right: 5px;
+	right: 45px;
 	top : 0;
 }
 
@@ -435,7 +440,7 @@ textarea {
 }
 
 .msg1 {
-	margin: 17px 121px;
+	margin: 17px 110px;
 }
 
 /*css 추가 */
