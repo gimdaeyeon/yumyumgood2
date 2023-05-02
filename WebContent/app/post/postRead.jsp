@@ -108,7 +108,7 @@
 							<input type="hidden" value="${post.getUserNumber()}"
 								class="post-user-number"> <a href="/user/youPage.us?userNumber=${post.getUserNumber()}" class="writer-link">
 								<!-- 임시 작성자 id -->
-								<h4>${post.getUserNickName()}</h4>
+								<h6 style = "margin-top: 29.5px;">${post.getUserNickName()}</h6>
 							</a>
 
 
@@ -129,7 +129,7 @@
 						<div class="read-content-title">
 							<!-- 임시 게시물 제목 -->
 							<!-- 제목 최대 자릿수 44 -->
-							<h3>${post.getPostTitle()}</h3>
+							<h3 style="margin-top: -20px; margin-left: 33px;">${post.getPostTitle()}</h3>
 
 						</div>
 
@@ -251,11 +251,11 @@
 
 											</div>
 											<div class="read-comment-more">
-												<div class="comment-write-time">댓글 작성 시간</div>
+												<div class="comment-write-time" style="margin-top: -4px;">댓글 작성 시간</div>
 												<!--댓글번호  -->
 												<input type="hidden" value="${post.getPostNumber()}"
 													name="postNumber" class="comment-number">
-												<button type="button" class="comment-delete">삭제하기</button>
+												<button type="button" class="comment-delete" style="margin-top: -4px;">삭제하기</button>
 											</div>
 										</div>
 									</li>
@@ -315,7 +315,7 @@
 											<i class="fa-solid fa-bookmark save-t"></i>
 										</c:when>
 										<c:otherwise>
-											<i class="fa-regular fa-bookmark save-f"></i>
+											<i class="fa-regular fa-bookmark save-f" style ="margin-right: 20px;"></i>
 										</c:otherwise>
 									</c:choose>
 								</button>
