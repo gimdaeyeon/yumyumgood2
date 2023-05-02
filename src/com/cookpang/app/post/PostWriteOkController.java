@@ -48,7 +48,7 @@ public class PostWriteOkController implements Execute {
 //	      }
 
 		String uploadPath = req.getSession().getServletContext().getRealPath("/") + "upload/";
-		int fileSize = 1024 * 1024 * 5; // 5MB
+		int fileSize = 1024 * 1024 * 100; // 5MB
 		System.out.println(uploadPath);
 		
 		MultipartRequest multipartRequest = new MultipartRequest(req, uploadPath, fileSize, "utf-8", new DefaultFileRenamePolicy());
