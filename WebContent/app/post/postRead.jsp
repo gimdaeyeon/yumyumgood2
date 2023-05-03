@@ -315,7 +315,7 @@
 											<i class="fa-solid fa-bookmark save-t"></i>
 										</c:when>
 										<c:otherwise>
-											<i class="fa-regular fa-bookmark save-f" style ="margin-right: 20px;"></i>
+											<i class="fa-regular fa-bookmark save-f"></i>
 										</c:otherwise>
 									</c:choose>
 								</button>

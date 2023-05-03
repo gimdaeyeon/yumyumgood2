@@ -71,7 +71,7 @@ String myTextareaValue = request.getParameter("myTextarea");
 							<div class="picture-box-left">
 								
 								<c:choose>
-								<c:when test="${empty userProfileImageSystemName}">
+								<c:when test="${empty profileEditVO.getUserProfileImageSystemName()}">
 									<div id="img-box">
 									<img
 										src="https://www.thechooeok.com/common/img/default_profile.png"
