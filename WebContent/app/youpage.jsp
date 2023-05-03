@@ -28,7 +28,7 @@
 					<div class="main-top">
 						<div class="profile-picture">
 							<c:choose>
-								<c:when test="${empty userInfo.getUserProfileImageSystemName()}">
+								<c:when test="${empty userVO.getUserProfileImageSystemName()}">
 									<div id="img-box">
 										<img
 											src="https://www.thechooeok.com/common/img/default_profile.png"
@@ -38,8 +38,8 @@
 								<c:otherwise>
 								<div class="img-box">
 									<img alt=""
-										src="/upload/${userInfo.getUserProfileImageSystemName()}"
-										class="profile-img">
+										src="/upload/${userVO.getUserProfileImageSystemName()}"
+										class="profile-img"/>
 									<!--    <a href="${profileImage.getUserProfileImageSystemName()}" alt="profile-img" class="profile-img">이미지</a> -->
 								</div>
 								</c:otherwise>
